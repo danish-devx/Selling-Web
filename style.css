@@ -53,6 +53,25 @@ body{
    font-weight: 600;
 }
 
+
+.navdiv ul li a{
+    position: relative;
+}
+
+.navdiv ul li a::before{
+      content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0% ;
+    height: 100%;
+    border-bottom: 3.7px solid #f16821;
+    transition: 0.4s linear;
+}
+.navdiv ul li a:hover::before{
+    width: 100%;
+}
+
 .navdiv ul li{
     padding: 10px 13px;
     
@@ -63,6 +82,10 @@ body{
     .navdiv{
    margin-left: 0%;
 }
+
+.navdiv ul li a:hover::before{
+    width: 10%;
+}
 }
 
 .navdiv ul li a:hover{
@@ -71,6 +94,7 @@ body{
 
 .navdiv ul li a{
     color: black;
+     transition: 0.3s linear;
 }
 
 header{
@@ -282,6 +306,11 @@ header{
     margin-left: 25% !important;
     
 }
+
+
+.navdiv ul li a:hover::before{
+    width: 24%;
+}
 }
 
 #input{
@@ -409,3 +438,35 @@ footer i:hover{
 }
 
 
+#formm input{
+    padding: 10px 20px !important;
+    border-radius: 0% !important;
+}
+
+#formm textarea{
+     
+    border-radius: 0% !important;
+}
+
+#btnn{
+    padding: 15px 35px;
+    background-color:black;
+    color: white;
+    font-size: 1rem;
+    font-weight: 900;
+    border: 2px solid black;
+    transition: all 0.4s ease;
+    margin-bottom: 5%;
+}
+
+form .form-control:focus {
+    border-color: #f16821 !important;
+    box-shadow: 0 0 0 0.25rem rgba(241, 104, 33, 0.6) !important;
+    outline: none !important;
+}
+
+
+#btnn:hover{
+   background: white;
+   color: black;
+}
